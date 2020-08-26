@@ -1,0 +1,86 @@
+body {
+    background-color: #6BA1D0;
+    color: rgb(219, 214, 214);
+    font-family: helvetica, sans-serif;
+    font-size: 10px;
+}
+input,
+textarea,
+select {
+    background-color: transparent;
+    border: 1.5px solid rgb(231, 228, 228);
+    color: rgb(219, 214, 214);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+input {
+    padding: 10px;
+}
+select {
+    border-radius: 5px;
+    appearance: none;
+    padding-left: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+textarea:focus, input:focus, input[type]:focus, select:focus {   
+    border-color: rgb(94, 102, 141);
+    outline: 0 none;
+}
+.form-flex {
+    display: flex;
+    justify-content: space-around;
+}
+.first-column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 15px;
+}
+.second-column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.third-column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 15px;
+}
+.first-name,
+.last-name,
+.email,
+.country,
+.bio,
+.phone,
+.affiliations,
+.occupation,
+.cat,
+.gadget,
+.talent,
+.drink,
+.power,
+.weapon,
+.comments {
+    display: flex;
+    flex-direction: column;
+}
+
+label {position:relative}
+.double-arrow:after {
+    content:"◄ ►";
+    font-size:8px;
+    font-weight: bold;
+    color:rgb(219, 214, 214);
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:3px; top:21px;
+    padding:0 0 2px;
+    position:absolute;
+    pointer-events:none;
+}
