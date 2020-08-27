@@ -84,3 +84,20 @@ label {position:relative}
     position:absolute;
     pointer-events:none;
 }
+
+@media screen and (max-width: 688px) {
+    .form-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .first-column {
+        margin-right: 5px;
+    }
+    .second-column {
+        margin-right: 5px;
+        margin-left: 0px;
+    }
+    .third-column {
+        margin-right: 5px;
+        margin-left: 0px;
+    }
